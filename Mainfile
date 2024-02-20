@@ -1,0 +1,13 @@
+Guest login only - no user choice anymore- need to get sudo rights
+Press Ctrl + Alt +F1 log in(with your proper account),
+Then,
+Sudo -e /etc/lightdm/lightdm.conf 
+
+Edit the place to allow guest mode to be false,
+Then, 
+Ctrl +s (save)
+Ctrl + x(to exit)
+Then,
+Sudo sytemctl restart lightdm
+
+And atleast one lesson learnt. Welcome to linux  it is configurable to a fault..
